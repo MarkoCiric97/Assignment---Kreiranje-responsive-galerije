@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03 - Responsive galerija</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .image {
+            min-height: 150px;
+            background-image: url(pozadina.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(80, 146, 207);
+            border: 1px solid rgb(77, 75, 75);
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .image-title p {
+            text-align: center;
+            margin: 0;
+            border: 1px solid rgb(77, 75, 75);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: white;
+            line-height: 50px;
+        }
+
+        #wrapper>div {
+            margin-bottom: 50px;
+        }
+
+        #lorem {
+            text-align: justify;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            #main-wrapper {
+                width: 90%;
+            }
+
+            #wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+
+            #wrapper>div {
+                width: 30%;
+            }
+
+            .image-title p {
+                line-height: 40px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            #main-wrapper {
+                width: 98%;
+            }
+
+            #wrapper>div {
+                width: 17%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <h1>Gallery heading</h1>
+        <div id="wrapper">
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image Title</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="image"></div>
+                <div class="image-title">
+                    <p>Image title</p>
+                </div>
+            </div>
+
+        </div>
+        <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+    </div>
+
+</html>
